@@ -1,0 +1,89 @@
+  /* @media  only screen and (max-width: 1400px)
+{
+   
+    .left-container{
+        width: 40% !important;
+       
+    }
+    .right-container{
+        width: 60% !important;
+    }
+  
+    .about{
+        font-size: 3.4rem;
+    }
+    
+    .about-me-box-bottom p{
+        font-size: 1.7rem;
+    }
+   
+    .project-box-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .project-heading p
+    {
+        font-size: 3rem;
+    }
+    
+    .exp-points{
+        font-size: 1.5rem;
+    }
+    .exp-heading p{
+        font-size: 3rem;
+    }
+    .contact-heading h1{
+        font-size: 4rem;
+    }
+    
+      .contact-form-heading h2{font-size: 2rem}
+      .contact-form-inputs{height: 70%;}
+      .social-media h3 {
+        padding: 5px 5px 5px 5px;
+        font-size: 3rem;
+    }
+}   */
+ @media only screen and (max-width:1275px)
+{  
+    .left-container{padding: 0 10px 0 10px;} 
+.about-me-box-bottom p{
+    font-size: 1.4rem;
+}
+.project-heading p {
+    font-size: 2.3rem;
+}
+.exp-heading p {
+    font-size: 2.4rem;
+}
+.contact-heading p{
+    font-size: 3rem;
+}
+ 
+}
+@media only screen and (max-width:1088px)
+{    
+    
+   .hi{
+    font-size: 2rem;
+   }
+   .icon-bg{
+    width: 100%;
+    height: 60%;
+    margin-top: 120px ;
+   }
+   .about{
+    font-size: 3rem;
+   }
+   .about-left h1{
+    font-size: 3rem;
+   }
+   .exp-points
+   {
+    font-size: 1.3rem;
+   }
+   .contact-form-heading h2 {
+    font-size: 1.5rem;
+    }
+    
+}  

@@ -1,0 +1,61 @@
+.bottomnav {
+    overflow: hidden;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    position: fixed;
+    display: none;
+    
+  }
+  
+  .bottomnav .a {
+    display: block;
+    color: rgb(64, 64, 64);
+    font-weight: 100;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border: none;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .a:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(64, 64, 64);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .bottomnav .logo {
+    font-family: "Sacramento", cursive;
+    color: rgb(64, 64, 64);
+    font-weight: 900;
+    font-size: 25px;
+    letter-spacing: 0.1cm;
+  
+  }
+  .bottomnav .icon {
+    display: none;
+  }
+  @media screen and (max-width: 1274px) {
+    .bottomnav{
+      display: flex;
+    }}
+
+  
+  
