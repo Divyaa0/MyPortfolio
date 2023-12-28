@@ -3,9 +3,10 @@
     font-family: 'Rubik', sans-serif;
     display: flex;
     justify-content: center;
-    font-family: "Montserrat", sans-serif;
     font-weight: 100;
+    margin: auto;
     position: fixed;
+    z-index: 29;
     display: none;
     
   }
@@ -55,6 +56,9 @@
   @media screen and (max-width: 1274px) {
     .bottomnav{
       display: flex;
+      display: flex;
+    justify-content: space-evenly;
+    width: 100%
     }}
 
   

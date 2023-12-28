@@ -1,5 +1,6 @@
 import React from "react";
 import "./style-footer.css";
+import './responsive.css';
 import { Link as ScrollLink, Element } from "react-scroll";
 import Skills from "./Skills";
 const Footer=()=>

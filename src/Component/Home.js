@@ -17,8 +17,8 @@ function Home() {
 
   return (
     <>
+    <Footer/>
       <div ref={homeRef} className="home-container" to="home">
-      
         <div className="left-container">
         <HeaderIcon/>
           <div class="card icon-bg">
