@@ -18,7 +18,7 @@ function Home() {
   return (
     <>
     <Footer/>
-      <div ref={homeRef} className="home-container" to="home">
+      <div ref={homeRef} className="home-container" to="home" name="home">
         <div className="left-container">
         <HeaderIcon/>
           <div class="card icon-bg">
@@ -36,7 +36,7 @@ function Home() {
           <div className="texts">
             <h1 className="hi">{wave} Hi ! I am Divya </h1>
             <p className="about">
-            I build <span>fun</span> and interactive things with code. Crafting a seamless user experience, I try to bring <span>ideas</span> to life in the digital realm.
+            I build <span>fun</span> and interactive things with code. Crafting a seamless user experience, I try to bring <span>ideas</span> to life in the digital sphere.
             </p>
           </div>
         </div>

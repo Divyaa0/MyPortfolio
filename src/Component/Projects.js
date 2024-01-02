@@ -16,6 +16,40 @@ function Projects() {
     setProjectDetails(buttonId);
     console.log("projectd", projectDetails, "activeD : ", activeButton);
   };
+  const iData_git=()=>
+  {
+    window.open('https://github.com/Divyaa0/iData')
+  }
+  const secure_git=()=>
+  {
+    window.open('https://github.com/Divyaa0/SecureFlow')
+
+  }
+  const edu_git=()=>
+  {
+    window.open('https://github.com/Divyaa0/EduMotive')
+
+  }
+  const weather_git=()=>
+  {
+    window.open('https://github.com/Divyaa0/App-Weather-Check')
+
+  }
+  const scrap_git=()=>
+  {
+    window.open('https://github.com/Divyaa0/Scraping-Phool-Website')
+
+  }
+  const salary_git=()=>
+  {
+    window.open('https://github.com/Divyaa0/Salary-Prediction-using-ML')
+
+  }
+  const news_git=()=>
+  {
+    window.open('https://github.com/Divyaa0/Voice')
+
+  }
   const proRef=useRef(null);
   return (
     <div className="project-container" ref={proRef} name="projects">
@@ -184,7 +218,7 @@ function Projects() {
                   </h5>
                 </div>
                 <div className="project-git">
-                  <h5 className="gitlink">Github Repo Link</h5>
+                  <h5 className="gitlink" onClick={iData_git}>Github Repo Link</h5>
                 </div>
               </div>
             </div>
@@ -234,7 +268,7 @@ function Projects() {
                   </h5>
                 </div>
                 <div className="project-git">
-                  <h5 className="gitlink">Github Repo Link</h5>
+                  <h5 className="gitlink" onClick={edu_git}>Github Repo Link</h5>
                 </div>
               </div>
             </div>
@@ -284,7 +318,7 @@ function Projects() {
                   <h5>TECHNOLOGY : REACTJS , OPENWEATHER API</h5>
                 </div>
                 <div className="project-git">
-                  <h5 className="gitlink">Github Repo Link</h5>
+                  <h5 className="gitlink"onClick={weather_git}>Github Repo Link</h5>
                 </div>
               </div>
             </div>
@@ -326,7 +360,7 @@ function Projects() {
                   <h5> TECHNOLOGY : SCRAPY SPLASH , PYTHON</h5>
                 </div>
                 <div className="project-git">
-                  <h5 className="gitlink">Github Repo Link</h5>
+                  <h5 className="gitlink"onClick={scrap_git}>Github Repo Link</h5>
                 </div>
               </div>
             </div>
@@ -368,7 +402,7 @@ function Projects() {
                   <h5> TECHNOLOGY : PYTHON , MACHINE LEARNING , FLASK</h5>
                 </div>
                 <div className="project-git">
-                  <h5 className="gitlink">Github Repo Link</h5>
+                  <h5 className="gitlink"onClick={salary_git}>Github Repo Link</h5>
                 </div>
               </div>
             </div>
@@ -405,7 +439,7 @@ function Projects() {
                   <h5> TECHNOLOGY : JAVASCRIPT ,AJAX , NEWSAPI</h5>
                 </div>
                 <div className="project-git">
-                  <h5 className="gitlink">Github Repo Link</h5>
+                  <h5 className="gitlink"onClick={news_git}>Github Repo Link</h5>
                 </div>
               </div>
             </div>
@@ -458,7 +492,7 @@ function Projects() {
                   <h5> TECHNOLOGY : REACTJS, PRIMEREACT , EXPRESSJS, JWT AUTH , POSTGRESQL</h5>
                 </div>
                 <div className="project-git">
-                  <h5 className="gitlink">Github Repo Link</h5>
+                  <h5 className="gitlink"onClick={secure_git}>Github Repo Link</h5>
                 </div>
               </div>
             </div>
