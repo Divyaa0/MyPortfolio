@@ -728,3 +728,22 @@ input[type="submit"]:hover {
   animation: fadeIn 1s ease-in-out; /* Adjust the animation duration and easing as needed */
 }
 
+/* CUSTOMISED SCROLLBARS */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(rgb(134, 239, 172), rgb(59, 130, 246), rgb(147, 51, 234));
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(0deg, rgba(110,152,152,1) 0%, rgba(46,44,44,1) 100%);; 
+}
