@@ -1,9 +1,9 @@
-import React ,{useRef} from "react";
+import React ,{useRef,useEffect} from "react";
 import { useState } from "react";
 import "./style.css";
 import "./responsive.css"
-
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { FaCircle } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 
@@ -51,13 +51,17 @@ function Projects() {
 
   }
   const proRef=useRef(null);
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="project-container" ref={proRef} name="projects">
       <div className="project-heading">
         <h1>Projects</h1>
         <p>Every Line, Every Day: Where Learning Meets Implementation</p>
       </div>
-      <div className="project-list">
+      <div className="project-list" data-aos="fade-up"
+     data-aos-duration="1000">
         <div className="list">
           {/* 7 */}
           <button

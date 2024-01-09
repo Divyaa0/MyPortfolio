@@ -8,37 +8,12 @@ import hi from "./imgs/undraw_Contact_us_re_4qqt.png";
 import { Element } from "react-scroll";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa6";
 import emailjs from "@emailjs/browser";
-import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Contact = () => {
   // ANIMATION:
   useEffect(() => {
-    scrollSpy.update(); // Update scrollSpy when the component mounts
-
-    const handleScroll = () => {
-      const skillSection = document.getElementById('skills');
-
-      if (skillSection) {
-        const skillSectionTop = skillSection.offsetTop;
-        const skillSectionHeight = skillSection.offsetHeight;
-        const scrollPosition = window.scrollY;
-        const windowHeight = window.innerHeight;
-
-        if (scrollPosition >= skillSectionTop - windowHeight / 2 && scrollPosition <= skillSectionTop + skillSectionHeight / 2) {
-          // Add your animation class to the about section when it is in the middle of the viewport
-          skillSection.classList.add('animate-about');
-        } else {
-          // Remove the animation class when the about section is not in view
-          skillSection.classList.remove('animate-about');
-        }
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll); // Remove the event listener when the component unmounts
-    };
+    AOS.init();
   }, []);
   const [inputVal, setInputVal] = useState({
     name: "",
@@ -121,7 +96,7 @@ const Contact = () => {
           <h1>Contact</h1>
           <p>Let's Connect and Collaborate!</p>
         </div>
-        <div className="contact-box">
+        <div className="contact-box" data-aos="fade-up">
           <div className="contact-box1">
             <div className="contact-img"></div>
           </div>

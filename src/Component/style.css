@@ -14,6 +14,7 @@ body{
   height: 100vh;
   display: flex;
   color: rgb(64, 64, 64);
+  font-family: 'Rubik', sans-serif;
 }
 .left-container {
   width: 30%;
@@ -194,7 +195,7 @@ span {
   background-color: rgb(247, 247, 247);
   border-radius: 20px;
   border: 5px solid rgb(64, 64, 64);
-  /* box-shadow: rgb(247,247,247) 4px 4px 0 0,rgb(64, 64, 64) 5px 5px 0 2px; */
+  font-family: 'Arvo', serif; 
 }
 .about-me-box-upper,
 .project-box-upper {
@@ -209,7 +210,7 @@ span {
 .project-box-bottom {
   height: 90%;
   padding: 20px 20px 20px 20px;
-  font-size: 1.5 rem;
+  font-size: 1.2rem;
   font-weight: 100;
 }
 .about-me-box-bottom p {
@@ -219,7 +220,8 @@ span {
 .about-me-box-bottom p:hover
 {
   /* color: #fff; */
-  box-shadow: inset 53rem 0 0 0 #54b3d6;;
+  cursor: pointer;
+  box-shadow: inset 53rem 0 0 0 #b3d4e0;;
 }
 /* SKILL PAGE */
 .skill-container {
@@ -264,9 +266,6 @@ span {
   box-sizing: border-box;
   color: rgb(64, 64, 64);
   display: flex;
-  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 700;
   justify-content: center;
@@ -284,6 +283,8 @@ span {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  font-family: 'Arvo', serif;
+
 }
 
 .button-53:focus {
@@ -459,12 +460,24 @@ span {
 }
 .exp1 {
   width: 46%;
-  /* height: 100%; */
-  background-color: #f2f7a1;
-  border-left: 50px solid #9d76c1;
+  /* background-color: #f2f7a1; */
+  /* border-left: 50px solid #9d76c1; */
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   padding-top: 50px;
   padding-bottom: 50px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px ;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 .exp-heading-box {
   font-size: 2rem;
@@ -477,13 +490,17 @@ span {
 }
 
 .exp-points {
-  font-size: 1rem;
+  /* margin-top: 10px; */
+  font-size: 0.9rem;
   font-weight: 200;
   height: 70%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  font-family: 'Arvo', serif; 
+
 }
+
 .exp-points li {
   padding: 5px;
   text-align: left;
@@ -681,52 +698,6 @@ input[type="submit"]:hover {
 
 
 
-/* animation */
-/* Add your animation styles */
-@keyframes slideFromLeft {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideFromRight {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-/* Apply the animation class to the left div */
-.animate-left {
-  animation: slideFromLeft 1s ease-in-out; /* Adjust the animation duration and easing as needed */
-}
-
-/* Apply the animation class to the right div */
-.animate-right {
-  animation: slideFromRight 1s ease-in-out; /* Adjust the animation duration and easing as needed */
-}
-
-/* SKILL PAGE */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Apply the animation class to the about section */
-.animate-about {
-  animation: fadeIn 1s ease-in-out; /* Adjust the animation duration and easing as needed */
-}
 
 /* CUSTOMISED SCROLLBARS */
 ::-webkit-scrollbar {
@@ -740,7 +711,7 @@ input[type="submit"]:hover {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(rgb(134, 239, 172), rgb(59, 130, 246), rgb(147, 51, 234));
+  background: linear-gradient(rgb(134, 239, 172), rgb(190, 200, 217), rgb(172, 168, 176));
 }
 
 /* Handle on hover */

@@ -3,36 +3,12 @@ import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll
 import React from "react";
 import './style.css'
 import "./responsive.css"
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Experience = () => {
   const expRef=useRef(null);
   useEffect(() => {
-    scrollSpy.update(); // Update scrollSpy when the component mounts
-
-    const handleScroll = () => {
-      const aboutSection = document.getElementById('exp');
-
-      if (aboutSection) {
-        const aboutSectionTop = aboutSection.offsetTop;
-        const aboutSectionHeight = aboutSection.offsetHeight;
-        const scrollPosition = window.scrollY;
-        const windowHeight = window.innerHeight;
-
-        if (scrollPosition >= aboutSectionTop - windowHeight / 2 && scrollPosition <= aboutSectionTop + aboutSectionHeight / 2) {
-          // Add your animation class to the about section when it is in the middle of the viewport
-          aboutSection.classList.add('animate-about');
-        } else {
-          // Remove the animation class when the about section is not in view
-          aboutSection.classList.remove('animate-about');
-        }
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll); // Remove the event listener when the component unmounts
-    };
+    AOS.init();
   }, []);
   
   return (
@@ -42,7 +18,8 @@ const Experience = () => {
         <p>Learning Beyond Classroom: Internships, Countless Lessons</p>
       </div>
       <div className="exp-box " id="exp">
-        <div className="exp1">
+        <div className="exp1" data-aos="zoom-in-right"
+     data-aos-duration="1000">
           <div className="exp-heading-box">
             <h6>Web Developer Intern</h6>
             <h6>Feb 2021 -April 2021</h6>
@@ -71,7 +48,8 @@ const Experience = () => {
           </div>
         </div>
         {/* 2 */}
-        <div className="exp1">
+        <div className="exp1" data-aos="zoom-in-left"
+     data-aos-duration="1000">
           <div className="exp-heading-box">
             <h6>Software Developer Intern</h6>
             <h6>Jan 2023 -April 2023</h6>

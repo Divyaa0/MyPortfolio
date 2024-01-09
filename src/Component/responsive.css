@@ -402,4 +402,5 @@
 }
 @media only screen and (max-width: 360px) {
     .about{font-size: 2rem;}
+    .about-me-box-bottom p{font-size: 0.6rem;}
 }

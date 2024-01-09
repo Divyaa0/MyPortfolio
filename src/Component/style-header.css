@@ -1,6 +1,7 @@
 .topnav {
   overflow: hidden;
   font-family: 'Rubik', sans-serif;
+  font-family: 'Arvo', serif; 
   display: flex;
   justify-content: center;
   font-weight: 300;

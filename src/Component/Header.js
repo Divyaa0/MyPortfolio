@@ -7,13 +7,7 @@ import Skills from "./Skills";
 function Header() {
   return (
     <div class="topnav" id="myTopnav">
-      {/* <a href="#home" class="active">Home</a>
-    <a href="#news">About Me</a>
-    <a href="#contact">Skills</a>
-    <a href="#about">Projects</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a> */}
+     
       <ScrollLink to="home" smooth={true} className="a">
         Home
       </ScrollLink>

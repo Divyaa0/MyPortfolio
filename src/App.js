@@ -1,4 +1,5 @@
 // import logo from './logo.svg';
+import { useEffect } from 'react';
 import './App.css';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Home from './Component/Home'
@@ -7,8 +8,12 @@ import Projects from './Component/Projects';
 import Skills from './Component/Skills';
 import Experience from './Component/Experience';
 
+
 function App() {
+
+  
   return (
+
     <div className="App">
       <BrowserRouter>
       <Routes>
